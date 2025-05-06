@@ -1,0 +1,24 @@
+.language-options button {
+  display: flex;
+  align-items: center; /* Centrar íconos y texto */
+  gap: 10px; /* Espacio entre la bandera y el idioma */
+  color: black;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.language-options button:hover {
+  background-color: #f1f1f1;
+}
+
+.flag-icon {
+  width: 20px; /* Tamaño de las banderas */
+  height: 15px;
+  border-radius: 3px; /* Bordes redondeados */
+  object-fit: cover; /* Asegurar que la imagen se ajuste al espacio */
+}

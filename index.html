@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="page-title">Regina Ranch Global</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/lang.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#inicio" data-lang="nav-home">Inicio</a></li>
+        <li><a href="#quienes-somos" data-lang="nav-about">Quiénes somos</a></li>
+        <li><a href="#vision-mision" data-lang="nav-vision-mission">Visión y Misión</a></li>
+        <li><a href="#servicios" data-lang="nav-services">Servicios</a></li>
+        <li><a href="#contacto" data-lang="nav-contact">Contacto</a></li>
+        <li><a href="#login-signup" data-lang="nav-login-signup">Login / Sign Up</a></li>
+      </ul>
+      <!-- Language Selector -->
+      <div class="language-dropdown">
+        <button class="language-button" onclick="toggleDropdown()">🌐 <span data-lang="language-select">Seleccionar idioma</span></button>
+        <div class="language-options" id="language-options">
+          <button onclick="changeLanguage('en')">
+            <img src="flags/us.png" alt="English" class="flag-icon"> Inglés
+          </button>
+          <button onclick="changeLanguage('es')">
+            <img src="flags/es.png" alt="Español" class="flag-icon"> Español
+          </button>
+          <button onclick="changeLanguage('fr')">
+            <img src="flags/fr.png" alt="Français" class="flag-icon"> Francés
+          </button>
+          <button onclick="changeLanguage('it')">
+            <img src="flags/it.png" alt="Italiano" class="flag-icon"> Italiano
+          </button>
+          <button onclick="changeLanguage('pt')">
+            <img src="flags/pt.png" alt="Português" class="flag-icon"> Portugués
+          </button>
+          <button onclick="changeLanguage('de')">
+            <img src="flags/de.png" alt="Deutsch" class="flag-icon"> Alemán
+          </button>
+          <button onclick="changeLanguage('ru')">
+            <img src="flags/ru.png" alt="Русский" class="flag-icon"> Ruso
+          </button>
+          <button onclick="changeLanguage('zh')">
+            <img src="flags/cn.png" alt="中文" class="flag-icon"> Chino Mandarín
+          </button>
+          <button onclick="changeLanguage('ja')">
+            <img src="flags/jp.png" alt="日本語" class="flag-icon"> Japonés
+          </button>
+          <button onclick="changeLanguage('ar')">
+            <img src="flags/ar.png" alt="العربية" class="flag-icon"> Árabe
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inicio Section -->
+    <section id="inicio">
+      <h1 data-lang="home-title">Regina Ranch Global</h1>
+      <p data-lang="home-description">Transformando oportunidades en logros financieros con soluciones innovadoras y personalizadas.</p>
+    </section>
+
+    <!-- Quiénes Somos Section -->
+    <section id="quienes-somos">
+      <h2 data-lang="about-title">Quiénes somos</h2>
+      <p data-lang="about-description">Regina Ranch Global es una firma líder en consultoría financiera y manejo de fondos de inversión. Nuestro equipo de expertos combina conocimiento profundo del mercado con estrategias innovadoras para maximizar el potencial financiero de nuestros clientes. Nos enfocamos en construir relaciones de confianza y ofrecer resultados sostenibles a largo plazo.</p>
+    </section>
+
+    <!-- Visión y Misión Section -->
+    <section id="vision-mision">
+      <h2 data-lang="vision-title">Visión</h2>
+      <p data-lang="vision-description">Ser reconocidos como el socio estratégico global preferido en consultoría financiera y gestión de inversiones, liderando con integridad, innovación y excelencia.</p>
+      <h2 data-lang="mission-title">Misión</h2>
+      <p data-lang="mission-description">Ayudar a nuestros clientes a alcanzar sus metas financieras mediante soluciones personalizadas, basadas en un análisis profundo, estrategias efectivas y un compromiso inquebrantable con su éxito.</p>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios">
+      <h2 data-lang="services-title">Servicios</h2>
+      <ul>
+        <li data-lang="service1">Consultoría financiera estratégica.</li>
+        <li data-lang="service2">Gestión de fondos de inversión.</li>
+        <li data-lang="service3">Planes de crecimiento empresarial.</li>
+        <li data-lang="service4">Análisis y gestión de riesgos financieros.</li>
+        <li data-lang="service5">Optimización de portafolios de inversión.</li>
+      </ul>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto">
+      <h2 data-lang="contact-title">Contacto</h2>
+      <p data-lang="contact-description">¿Listo para transformar tus finanzas? Contáctanos:</p>
+      <p>📧 <a href="mailto:info@reginaranchglobal.com">info@reginaranchglobal.com</a></p>
+      <p>📞 +1 800 123 4567</p>
+      <form>
+        <label for="nombre" data-lang="contact-name">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email" data-lang="contact-email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje" data-lang="contact-message">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit" data-lang="contact-send">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p data-lang="footer-text">© 2025 Regina Ranch Global. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
